@@ -14,6 +14,6 @@ This repository contains submodules. To clone it, you must use the `--recursive`
 ## Project Structure
 This repository is decomposed in the following top-level directories:
 - [`doc`](./doc): Contains the laboratory manual, slides, and related documentation.
+- [`asgmt-1`](./asgmt-1): Contains the source code for the 1st assignment, "Set up".
 - [`asgmt-2`](./asgmt-2): Contains the source code for the 2nd assignment, "OBDH".
 - [`asgmt-3`](./asgmt-3): Contains the source code and Simulink models for the 3rd assignment, "OBDH with ACS".
-- [`asgmt-1`](./asgmt-1): Contains the source code for the 1st assignment, "Set up".
