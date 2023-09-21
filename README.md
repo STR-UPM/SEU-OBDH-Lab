@@ -23,6 +23,7 @@ This repository contains submodules. To clone it, you must use the `--recursive`
 ## Project Structure
 This repository is decomposed in the following top-level directories:
 - [`doc`](./doc): Contains the laboratory manual, slides, and related documentation.
-- [`ass-1`](./ass-1): Contains the source code for the 1st assignment, "Set up".
-- [`ass-2`](./ass-2): Contains the source code for the 2nd assignment, "OBDH".
-- [`ass-3`](./ass-3): Contains the source code and Simulink models for the 3rd assignment, "OBDH with ACS".
+- [`lab-1`](./lab-1): Contains the source code for the Hello program from the 1st assignment, "Set up".
+- [`lab-2`](./lab-2): Contains the source code for the Led demo from the 1st assignment, "Set up".
+- [`lab-3`](./lab-3): Contains the source code for the 2nd assignment, "OBDH".
+- [`lab-4`](./lab-4): Contains the source code and Simulink models for the 3rd assignment, "OBDH with ACS".
