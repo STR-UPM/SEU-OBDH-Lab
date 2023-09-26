@@ -16,9 +16,12 @@ thus, an OBDH is said to be a real-time embedded system.
 The main objectives of the assignments are to get the students acquainted
 with the activities for cross-development of an embedded system.
 
-## Important Notice
+## Install
 This repository contains submodules. To clone it, you must use the `--recursive` git option:
-> git clone --recursive https://github.com/STR-UPM/SEU-OBDH-Lab.git
+
+```
+git clone --recursive https://github.com/STR-UPM/SEU-OBDH-Lab.git
+```
 
 ## Project Structure
 This repository is decomposed in the following top-level directories:
