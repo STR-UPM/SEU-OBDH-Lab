@@ -1,4 +1,4 @@
-# LAB1
+# LAB1: Hello World
 
 This directory contains a simple program for testing the native Ada compiler installation.
 

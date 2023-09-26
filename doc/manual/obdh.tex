@@ -272,8 +272,7 @@ This is assured analytically by conducting a \textbf{Response-Time Analysis (RTA
 To perform the RTA, you will need to measure the execution time of the task bodies and the protected procedure bodies.
 A simple loop technique using the standard real-time clock will be enough for this assignment.
 
-An execution time measurement tool is available in the \textcolor{mPurple}{\texttt{lab-3}} directory.
-In order to use it, perform the following steps:
+An execution time measurement tool is available. To use it, follow these steps:
 
 \begin{enumerate}
 \item Open GPS and select Open project on the welcome window. Navigate to the \textcolor{mPurple}{\texttt{lab-3}}
@@ -285,23 +284,28 @@ directory and open the \texttt{wcet\_meter.gpr} project file.
 computer. If the remote terminal application is not open, open it.
 \end{enumerate}
 
+\begin{figure}[hbtp!]
+	\centering{\includegraphics[width=0.6\textwidth,keepaspectratio]{wcet.png}}
+	\caption{Output of wcet measurement tool.}
+	\label{fig:wcet}
+\end{figure}
+
 A measurement test is executed on the board, and repeated every 60 s. The output of the test is shown on the host terminal application (figure~\ref{fig:wcet}). The output shows the execution times for the bodies of the Housekeeping (HK) and TTC (TC) tasks, as well as the bodies of the protected operations of the Storage object (ST). Notice that a new entry, \texttt{Get\_Immediate},
 has been added for the latter in order \textit{to avoid the measuring task to get blocked}.
 The new entry is exactly the same as \texttt{Get} but has a True barrier so that it is always open.
-
-\begin{figure}[h]
-    \centering{\includegraphics[width=0.6\textwidth,keepaspectratio]{wcet.png}}
-    \caption{Output of wcet measurement tool.}
-    \label{fig:wcet}
-\end{figure}
 
 In the example shown on figure~\ref{fig:wcet}, the HK execution time has been measured $10^{6}$ times, with a total measurement time of 13.02 s. Therefore, the value to be taken for the response time analysis is $13.02\cdot10^{-6}~s = 13.02~\mu${s}, and the same for the other tasks. Take into account that the values measured on your board will probably be slightly different from the above shown.
 
 Once you have an estimate of worst case execution times, apply the RTA equations for computing the worst-case response time and check if all the deadlines are met. The setup for the calculations is shown on table~\ref{tb:wcet}
 containing the period (T), execution time (C),
 blocking time (B), deadline (D),
-response time (R), priority (P),
-and accesses to protected object of each task.
+response time (R), and priority (P) of all tasks.
+The last two columns (Storage and Operation)
+present the protected object called \texttt{Storage}
+that is accessed with a mean execution time of
+$3\cdot10^{-6}$ seconds by the \texttt{Housekeeping} task through its CPut operation,
+and $4\cdot10^{-6}$ seconds by the \texttt{TTC} task through its CGet operation.
+Finally, the last row contains the ceiling priority of the Storage protected object.
 
 \textcolor{mRedBrown}{\textbf{Important}}: The temporal analysis (RTA) will be explained later in the course. Therefore, execution times should be stored for later. 
 
@@ -314,14 +318,14 @@ and accesses to protected object of each task.
 	
 	\small % Font size
 	
-	\begin{tabular}{|r r r r r r r r r|} \hline
+	\begin{tabular}{|r r r r r r r |r r|} \hline
 	\textbf{Task} & T & C & B & D & R & P & Storage & Operation\\ \hline
 	
 	\textbf{Housekeeping} & 1.0 & $13\cdot10^{-6}$ & \textcolor{mRedBrown}{\textbf{?}} & 1.0 & \textcolor{mRedBrown}{\textbf{?}} & 20 & $3\cdot10^{-6}$ & CPut \\
 	
 	\textbf{TTC} & 10.0 & $26\cdot10^{-6}$ & \textcolor{mRedBrown}{\textbf{?}} & 2.0 & \textcolor{mRedBrown}{\textbf{?}} & 10 & $4\cdot10^{-6}$ & CGet \\ \hline
 	
-	& & & & & & CP & \multicolumn{2}{|c|}{\textcolor{mRedBrown}{\textbf{?}}} \\ \hline
+	\multicolumn{7}{|r|}{Ceiling Priority} & \multicolumn{2}{|c|}{\textcolor{mRedBrown}{\textbf{?}}} \\ \hline
 	\end{tabular}
 	\caption{Data arrangement for RTA of the housekeeping system. Time units in seconds.}
 	\label{tb:wcet}
