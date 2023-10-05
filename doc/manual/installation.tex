@@ -235,10 +235,12 @@ Open GPS and do the following:
 \item Select Open project on the welcome window. Navigate to
 
 \begin{BVerbatim}
-	.../SEU-OBDH-Lab/-Ada_Drivers_Library/examples/STMF4_DISCO
+	.../SEU-OBDH-Lab/-Ada_Drivers_Library/examples/STM32F4_DISCO
 \end{BVerbatim}
 
 and open the project file named \texttt{blinky\_f4disco.gpr}
+
+\item   \textbf{\textcolor{mRedBrown}{Important:}} Update the project's runtime to full Ravenscar, as follows: Open ``Edit'' $\rightarrow$ ``Project properties''; then, inside the ``Build'' $\rightarrow$ ``Toolchain'' $\rightarrow$ ``Ada Runtime'' option choose the \texttt{ravenscar-full-stm32f4 profile}.
 
 \item	Build the executable and load it into the board by clicking on the \hbox{\includegraphics[width=1.5em]{buildandload.png}} symbol in the tool bar (or select Build $\rightarrow$ Bareboard $\rightarrow$ Flash to board on the top menu). When the loading is complete, you will see the board LEDS blinking all at the same time.
 \end{enumerate}

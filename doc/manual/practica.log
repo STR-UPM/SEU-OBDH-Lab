@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.14)  26 SEP 2023 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.14)  5 OCT 2023 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -980,7 +980,7 @@ Package pdftex.def Info: fig//buildandload.png  used on input line 224.
 (pdftex.def)             Requested size: 15.00002pt x 11.73903pt.
 File: fig//buildandload.png Graphic file (type png)
 <use fig//buildandload.png>
-Package pdftex.def Info: fig//buildandload.png  used on input line 243.
+Package pdftex.def Info: fig//buildandload.png  used on input line 245.
 (pdftex.def)             Requested size: 15.00002pt x 11.73903pt.
 ) [11 <./fig//buildandload.png>]
 \openout2 = `obdh.aux'.
@@ -992,7 +992,7 @@ Package pdftex.def Info: fig//buildandload.png  used on input line 243.
 
 ]
 Assignment 2.
-<fig//obsw-v2.png, id=350, 579.912pt x 356.313pt>
+<fig//obsw-v2.png, id=351, 579.912pt x 356.313pt>
 File: fig//obsw-v2.png Graphic file (type png)
 <use fig//obsw-v2.png>
 Package pdftex.def Info: fig//obsw-v2.png  used on input line 18.
@@ -1004,17 +1004,17 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.37 
       <./fig//obsw-v2.png>]
-<fig//connector.png, id=358, 382.42876pt x 289.08pt>
+<fig//connector.png, id=359, 382.42876pt x 289.08pt>
 File: fig//connector.png Graphic file (type png)
 <use fig//connector.png>
 Package pdftex.def Info: fig//connector.png  used on input line 51.
 (pdftex.def)             Requested size: 128.0387pt x 96.78615pt.
-<fig//com.png, id=362, 685.56125pt x 921.4425pt>
+<fig//com.png, id=363, 685.56125pt x 921.4425pt>
 File: fig//com.png Graphic file (type png)
 <use fig//com.png>
 Package pdftex.def Info: fig//com.png  used on input line 87.
 (pdftex.def)             Requested size: 256.07741pt x 344.19032pt.
-<fig//putty.png, id=364, 872.25874pt x 859.21pt>
+<fig//putty.png, id=365, 872.25874pt x 859.21pt>
 File: fig//putty.png Graphic file (type png)
 <use fig//putty.png>
 Package pdftex.def Info: fig//putty.png  used on input line 95.
@@ -1050,7 +1050,7 @@ File: fig//buildandload.png Graphic file (type png)
 <use fig//buildandload.png>
 Package pdftex.def Info: fig//buildandload.png  used on input line 238.
 (pdftex.def)             Requested size: 15.00002pt x 11.73903pt.
-<fig//output.png, id=391, 980.66376pt x 580.1675pt>
+<fig//output.png, id=392, 980.66376pt x 580.1675pt>
 File: fig//output.png Graphic file (type png)
 <use fig//output.png>
 Package pdftex.def Info: fig//output.png  used on input line 246.
@@ -1065,7 +1065,7 @@ Overfull \hbox (35.44604pt too wide) in paragraph at lines 281--282
 y as for the \OT1/cmtt/m/n/10 realtime[]housekeeping.gpr
  []
 
-<fig//wcet.png, id=402, 983.675pt x 594.22pt>
+<fig//wcet.png, id=403, 983.675pt x 594.22pt>
 File: fig//wcet.png Graphic file (type png)
 <use fig//wcet.png>
 Package pdftex.def Info: fig//wcet.png  used on input line 288.
@@ -1098,12 +1098,12 @@ l.146 	\include{obdh}
 
 ]
 Assignment 3.
-<fig//acs.png, id=429, 1026.83624pt x 617.30624pt>
+<fig//acs.png, id=430, 1026.83624pt x 617.30624pt>
 File: fig//acs.png Graphic file (type png)
 <use fig//acs.png>
 Package pdftex.def Info: fig//acs.png  used on input line 17.
 (pdftex.def)             Requested size: 256.07741pt x 153.9494pt.
-<fig//acs-hl.png, id=431, 1042.89626pt x 780.9175pt>
+<fig//acs-hl.png, id=432, 1042.89626pt x 780.9175pt>
 File: fig//acs-hl.png Graphic file (type png)
 <use fig//acs-hl.png>
 Package pdftex.def Info: fig//acs-hl.png  used on input line 44.
@@ -1115,12 +1115,12 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.54 
       <./fig//acs.png>]
-<fig//acs-simulink.png, id=440, 1865.97125pt x 1031.855pt>
+<fig//acs-simulink.png, id=441, 1865.97125pt x 1031.855pt>
 File: fig//acs-simulink.png Graphic file (type png)
 <use fig//acs-simulink.png>
 Package pdftex.def Info: fig//acs-simulink.png  used on input line 59.
 (pdftex.def)             Requested size: 426.79135pt x 235.99908pt.
-<fig//nac.png, id=442, 1865.97125pt x 1031.855pt>
+<fig//nac.png, id=443, 1865.97125pt x 1031.855pt>
 File: fig//nac.png Graphic file (type png)
 <use fig//nac.png>
 Package pdftex.def Info: fig//nac.png  used on input line 74.
@@ -1138,7 +1138,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.78 
       <./fig//acs-hl.png> <./fig//acs-simulink.png>]
-<fig//scope.png, id=450, 1861.95625pt x 1059.96pt>
+<fig//scope.png, id=451, 1861.95625pt x 1059.96pt>
 File: fig//scope.png Graphic file (type png)
 <use fig//scope.png>
 Package pdftex.def Info: fig//scope.png  used on input line 88.
@@ -1156,17 +1156,17 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.101 
        <./fig//nac.png> <./fig//scope.png>]
-<fig//control.png, id=457, 1861.95625pt x 1059.96pt>
+<fig//control.png, id=458, 1861.95625pt x 1059.96pt>
 File: fig//control.png Graphic file (type png)
 <use fig//control.png>
 Package pdftex.def Info: fig//control.png  used on input line 109.
 (pdftex.def)             Requested size: 426.79135pt x 242.96082pt.
-<fig//code.png, id=459, 1861.95625pt x 1059.96pt>
+<fig//code.png, id=460, 1861.95625pt x 1059.96pt>
 File: fig//code.png Graphic file (type png)
 <use fig//code.png>
 Package pdftex.def Info: fig//code.png  used on input line 126.
 (pdftex.def)             Requested size: 426.79135pt x 242.96082pt.
-<fig//obsw-acs-v2.png, id=462, 780.078pt x 357.408pt>
+<fig//obsw-acs-v2.png, id=463, 780.078pt x 357.408pt>
 File: fig//obsw-acs-v2.png Graphic file (type png)
 <use fig//obsw-acs-v2.png>
 Package pdftex.def Info: fig//obsw-acs-v2.png  used on input line 145.
@@ -1181,7 +1181,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.149 
        <./fig//control.png>]
-<fig//acs-body.png, id=474, 1098.1025pt x 934.49126pt>
+<fig//acs-body.png, id=475, 1098.1025pt x 934.49126pt>
 File: fig//acs-body.png Graphic file (type png)
 <use fig//acs-body.png>
 Package pdftex.def Info: fig//acs-body.png  used on input line 161.
@@ -1210,12 +1210,12 @@ has been already used, duplicate ignored
 l.184 \item S
              elect Open project on the welcome window. Navigate to the OBSW ...
  <./fig//acs-body.png>]
-<fig//debug.png, id=487, 26.0975pt x 21.07875pt>
+<fig//debug.png, id=488, 26.0975pt x 21.07875pt>
 File: fig//debug.png Graphic file (type png)
 <use fig//debug.png>
 Package pdftex.def Info: fig//debug.png  used on input line 185.
 (pdftex.def)             Requested size: 15.00002pt x 12.11566pt.
-<fig//nac-pil.png, id=489, 1861.95625pt x 1059.96pt>
+<fig//nac-pil.png, id=490, 1861.95625pt x 1059.96pt>
 File: fig//nac-pil.png Graphic file (type png)
 <use fig//nac-pil.png>
 Package pdftex.def Info: fig//nac-pil.png  used on input line 216.
@@ -1272,8 +1272,8 @@ Package rerunfilecheck Info: File `practica.out' has not changed.
 ### simple group (level 1) entered at line 3 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26375 strings out of 476017
- 495359 string characters out of 5793766
+ 26376 strings out of 476017
+ 495366 string characters out of 5793766
  1865660 words of memory out of 5000000
  46167 multiletter control sequences out of 15000+600000
  525606 words of font info for 82 fonts, out of 8000000 for 9000
@@ -1297,10 +1297,10 @@ amsfonts/cm/cmtt12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/
 symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx
 1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><
 c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb>
-Output written on practica.pdf (35 pages, 11633361 bytes).
+Output written on practica.pdf (35 pages, 11633657 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 537 compressed objects within 6 object streams
- 162 named destinations out of 1000 (max. 500000)
+ 652 PDF objects out of 1000 (max. 8388607)
+ 539 compressed objects within 6 object streams
+ 163 named destinations out of 1000 (max. 500000)
  394 words of extra memory for PDF output out of 10000 (max. 10000000)
 
