@@ -27,16 +27,19 @@ The figure~\ref{fig:kit} shows the components of the laboratory kit and the conn
 \section*{Architecture of the laboratory system}
 \addcontentsline{toc}{section}{Architecture of the laboratory system}
 
-The figure~\ref{fig:architecture} depicts the architecture of the laboratory system which consists of two segments.
-The \textit{flight segment} is deployed on the laboratory computer board,
-and, the \textit{ground segment} is deployed on the student's PC.
+The figure~\ref{fig:architecture} shows the architecture of the laboratory system which consists of two segments:
+\begin{itemize}
+\item The \textit{flight segment} is deployed on the laboratory computer board.
+\item The \textit{ground segment} is deployed on the student's PC.
+\end{itemize}
+
 The communication between both segments is carried out by means of a serial line,
 simulating the radio link of a real satellite mission.
 The student's work is centered on programming the computer board.
 The ground station software will be provided by the professors.
 
 \begin{figure}[hbtp!]
-            \centering{\includegraphics[width=0.35\textwidth,keepaspectratio]{architecture.png}}
+            \centering{\includegraphics[width=0.4\textwidth,keepaspectratio]{architecture.png}}
             \caption{Architecture of the laboratory system.}
             \label{fig:architecture}
 \end{figure}
@@ -50,7 +53,7 @@ The board features a 32-bit ARM Cortex-M4 microcomputer,
 The figure~\ref{fig:board}
 shows an overall view of the computer board.
 
-\begin{figure}[h]
+\begin{figure}[hbtp!]
     \centering{\includegraphics[height=10.2cm,keepaspectratio]{board-v2.png}}
     \caption{Computer board.}
     \label{fig:board}

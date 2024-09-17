@@ -27,6 +27,7 @@
 \usepackage[hmargin=3cm,vmargin=2cm]{geometry} % page margins
 \usepackage{calc}
 %\usepackage[lineno5]{lgrind}
+\PassOptionsToPackage{hyphens}{url}
 \usepackage{hyperref}
 %\usepackage{fontspec,xunicode,xltxtra}
 \usepackage{gensymb}
@@ -136,12 +137,12 @@
 	%======================= document body =================================
 	\mainmatter
 	\cleardoublepage
-	\pagestyle{headings}
+	%\pagestyle{headings}
 	\pagenumbering{arabic}\setcounter{page}{1}
 	%----------------------------------------------------------------------
 	\include{introduction}
 	\include{overview}
-	\renewcommand{\chaptername}{Assignment}
+	\renewcommand{\chaptername}{Assignment}		\pagestyle{headings}
 	\include{installation}
 	\include{obdh}
 	\include{obdh-acs}

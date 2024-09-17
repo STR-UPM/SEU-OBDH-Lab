@@ -23,7 +23,7 @@ and solutions for developing high-integrity software.
 
 \subsection{Download and install GNAT}
 The GNAT Community compilation system can be downloaded from \url{https://www.adacore.com/download/more}.
-Installation packages for Windows, MacOS and GNU Linux
+Installation packages for Windows, MacOS-Intel and GNU Linux
 are available at the download page.
 The file \texttt{README.txt} provides installation instructions,
 which are summarized in the following subsections:
@@ -45,9 +45,9 @@ This
 {link}
 provides detailed instructions to solve this issue.
 
-\subsubsection*{MacOS}
+\subsubsection*{MacOS-Intel}
 \begin{enumerate}
-\item Download the file \texttt{gnat-2020-20200818-x86\_64-darwin-bin.dmg}
+\item Download the file \href{https://community.download.adacore.com/v1/aefa0616b9476874823a7974d3dd969ac13dfe3a?filename=gnat-2020-20200818-x86_64-darwin-bin.dmg&rand=124}{\texttt{gnat-2020-20200818-x86\_64-darwin-bin.dmg}}
 \item Open the dmg disk and execute the application inside it.
 In order to circumvent the system protection,
 control-click on the file and then click on ``opens" in the emergent window.
@@ -69,7 +69,7 @@ then you might have to execute the following:
 
 \subsubsection*{GNU Linux}
 \begin{enumerate}
-\item Download the file \texttt{gnat-2021-20210519-x86\_64-linux-bin}
+\item Download the file \href{https://community.download.adacore.com/v1/f3a99d283f7b3d07293b2e1d07de00e31e332325?filename=gnat-2021-20210519-x86_64-linux-bin&rand=481}{\texttt{gnat-2021-20210519-x86\_64-linux-bin}}
 \item You will need provide execution permissions to the binary in order to run it.
 Run the following command in your terminal:
 
@@ -164,7 +164,7 @@ that supports loading and debugging from the host platform.
 
 GNAT ARM ELF is the cross-compilation chain to be used with the STM32F4 board. It can be downloaded from the
 \href{https://www.adacore.com/download/more}{same page as the native GNAT system},
-and there are installation packages for Windows, MacOS and GNU Linux available.
+and there are installation packages for Windows, MacOS-Intel and GNU Linux available.
 The file \texttt{README.txt} provides installation instructions,
 which are summarized as follows.
 
@@ -176,12 +176,12 @@ gnat-2021-20210519-arm-elf-windows64-bin.exe
 \item You will also need to install the USB driver for the ST-LINK probe. To do so, go to \url{http://www.st.com/content/st\_com/en/products/embedded-software/development-tool-software/stsw-link009.html}, and click on Get Software. Click on Get Software under the Download column of the table that shows up to obtain the driver. You will need to accept ST Micro’s license agreement and enter your contact details. 
 Once downloaded unzip the USB device driver and run the installer, accepting all the defaults.
 \end{enumerate}
-\subsubsection*{MacOS}
+\subsubsection*{MacOS-Intel}
 \begin{enumerate}
 \item Select the platform ARM ELF (hosted on darwin) 2021, and download the file gnat-community-2019-20190517-arm-elf-darwin-bin.dmg
 \item Open the dmg disk and execute the application inside it. In order to circumvent the system protection, control-click on the file and then click on ``open" in the emergent window.
 \item You will also need the st-util,  st-flash, and st-info tools. You can download the binaries from 
-\url{https://github.com/texane/stlink/releases/download/1.3.0/stlink-1.3.0-macosx-amd64.zip}. Unzip and copy the files in the bin directory to a directory in your PATH. You may need to circumvent MacOS protection by executing the command:
+\url{https://github.com/texane/stlink/releases/download/1.3.0/stlink-1.3.0-macosx-amd64.zip}. Unzip and copy the files in the bin directory to a directory in your PATH. You may need to circumvent MacOS-Intel protection by executing the command:
 
 	\$ xattr -d com.apple.quarantine path-to-executable-file
 \end{enumerate}
@@ -193,7 +193,7 @@ Once downloaded unzip the USB device driver and run the installer, accepting all
      chmod +x path\_to\_the\_package.bin
 
 and then execute the package.
-\item You will also need to install the stlink tools. In Ubuntu and Debian stlink must be installed from sources. Follow the instructions on \url{http://docs.adacore.com/live/wave/gnat\_ugx/html/gnat\_ugx/gnat\_ugx/arm-elf\_topics\_and\_tutorial.html\#linux}.
+\item You will also need to install the stlink tools. In Ubuntu and Debian stlink must be installed from the latest built packages available in the following \href{https://github.com/stlink-org/stlink/releases/latest}{GitHub repository (release v1.8.0)}.
 \end{enumerate}
 
 The README.txt file contains additional installation and execution instructions.
@@ -258,7 +258,7 @@ Please read this \href{https://www.upm.es/sfs/Rectorado/Vicerrectorado\%20de\%20
 
 \item Choose the Individual License, not the Concurrent.
 
-\item During the installation procedure, on the 3rd tab of \textbf{products}, install the following \textbf{add-ons}:
+\item During the installation procedure, on the 3\textsuperscript{rd} tab of \textbf{products}, install the following \textbf{add-ons}:
 \begin{itemize}
 	 \item MATLAB
 	 \item Simulink
