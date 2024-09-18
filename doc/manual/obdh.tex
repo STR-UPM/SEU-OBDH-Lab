@@ -102,7 +102,7 @@ The recommended application is screen, which is already installed in MacOS.
 First you have to identify the USB serial port. Open a terminal window and type
 
 \begin{BVerbatim}
-	$ ls /dev | grep -i usb
+	ls /dev | grep -i usb
 \end{BVerbatim}
 
 You will get a list of devices like the following:
@@ -114,10 +114,17 @@ You will get a list of devices like the following:
 
 As you can see, there are two devices for each serial line. You can use any of them, but for reasons not to be discussed here it is better, in general, to use the one starting with cu.
 
+A minimalist terminal client for *NIX systems is called ``screen''. It is available in \textit{homebrew} and can be installed as follows:
+
+\begin{BVerbatim}
+	brew install screen
+\end{BVerbatim}
+
+
 To use the screen application enter the following command:
 
 \begin{BVerbatim}
-	$ screen /dev/cu.usbserial-XXXX 115200
+	screen /dev/cu.usbserial-XXXX 115200
 \end{BVerbatim}
 	
 where \texttt{/dev/cu.usbserial-XXXX} is the name of your device.
@@ -129,13 +136,13 @@ To exit the application, type CTRL-A and then CTRL-K.
 The recommended application is screen,4 which can be installed in Ubuntu Linux with:
 
 \begin{BVerbatim}
-	$ sudo apt install screen
+	sudo apt install screen
 \end{BVerbatim}
 
 In order to identify the USB serial port, type the following command on a terminal:
 
 \begin{BVerbatim}
-	$ ls /dev | grep -i usb
+	ls /dev | grep -i usb
 \end{BVerbatim}
 
 You will get a result like the following:
@@ -147,7 +154,7 @@ You will get a result like the following:
 To use the screen application enter the following command:
 
 \begin{BVerbatim}
-	$ screen /dev/ttyUSB0 115200
+	screen /dev/ttyUSB0 115200
 \end{BVerbatim}
 
 To exit the application, type CTRL-A and then SHIFT-K.

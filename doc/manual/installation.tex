@@ -171,26 +171,53 @@ which are summarized as follows.
 \subsubsection*{Windows}
 \begin{enumerate}
 \item Select the platform ARM ELF (hosted on windows64) 2021, and download the file
-gnat-2021-20210519-arm-elf-windows64-bin.exe
+\href{https://community.download.adacore.com/v1/3af961d8c675e36d87934450bc6356a84a0d753b?filename=gnat-2021-20210519-arm-elf-windows64-bin.exe&rand=444}{\nolinkurl{gnat-2021-20210519-arm-elf-windows64-bin.exe}}
 \item Run the file and follow the instructions.
-\item You will also need to install the USB driver for the ST-LINK probe. To do so, go to \url{http://www.st.com/content/st\_com/en/products/embedded-software/development-tool-software/stsw-link009.html}, and click on Get Software. Click on Get Software under the Download column of the table that shows up to obtain the driver. You will need to accept ST Micro’s license agreement and enter your contact details. 
-Once downloaded unzip the USB device driver and run the installer, accepting all the defaults.
+\item You will also need to install the USB driver for the ST-LINK probe. To do so, go to \href{http://www.st.com/content/st\_com/en/products/embedded-software/development-tool-software/stsw-link009.html}{this link}, and follow this instructions: Click on Get Software under the Download column of the table that shows up to obtain the driver. You will need to accept ST Micro’s license agreement and enter your contact details.
+\item  Once ST-Link is downloaded (``\texttt{en}'' folder), unzip the USB device driver and run the installer (``\texttt{stlink\_winusb\_install.bat}''), accepting all the defaults.
 \end{enumerate}
+
+\textbf{\textcolor{mRedBrown}{Important:}} ST-Link drivers usually fail to install due to Windows driver signature enforcement. In this case, you need to reboot in secure mode\footnote{Type ``Opciones de recuperación'' in the Windows finder.}. In the recovery white-blue screen, click ``Troubleshoot'' or ``Solucionar Problemas'' $\rightarrow$ ``Startup Repair'' or ``Reparación de Inicio'' $\rightarrow$ ``Restart'' or ``Reiniciar''. Then, type 7 or F7 to Disable driver signature enforcement. Once done, repeat the step 4 to install the drivers. % disable the secure boot option, reboot the machine, and try to execute the above commands again.%the following command in the terminal as an administrator:
+%
+%	bcdedit.exe -set loadoptions DDISABLE_INTEGRITY_CHECKS
+%\begin{BVerbatim}
+%	bcdedit.exe -set loadoptions DISABLE_INTEGRITY_CHECKS	
+%	bcdedit /set nointegritychecks on
+%\end{BVerbatim}
+%
+%If you failed to execute it; disable the secure boot option, reboot the machine, and try to execute the above commands again.
+
+\subsubsection*{MacOS-ARM (running Windows in Parallels\texttrademark{})}
+
+\begin{enumerate}
+	\item Select the platform ARM ELF (hosted on windows64) 2021, and download the file
+	\href{https://community.download.adacore.com/v1/3af961d8c675e36d87934450bc6356a84a0d753b?filename=gnat-2021-20210519-arm-elf-windows64-bin.exe&rand=444}{\nolinkurl{gnat-2021-20210519-arm-elf-windows64-bin.exe}}
+	\item Run the file and follow the instructions.
+	\item You will also need to install the USB driver for the ST-LINK probe. Since ST-Link is not officially supported for ARM64, you will need to install an alternate version \href{https://moodle.upm.es/titulaciones/oficiales/mod/resource/view.php?id=460888}{uploaded in Moodle}.
+
+	\item  Once ST-Link is downloaded (``\texttt{stsw-link009\_v3\_ARM64\_UNSIGNED}'' folder), reboot the virtual  machine in secure mode\footnote{Type ``Opciones de recuperación'' in the Windows finder.}. In the recovery white-blue screen, click ``Troubleshoot'' or ``Solucionar Problemas'' $\rightarrow$ ``Startup Repair'' or ``Reparación de Inicio'' $\rightarrow$ ``Restart'' or ``Reiniciar''. Then, type 7 or F7 to Disable driver signature enforcement.
+	
+	\item Finally, you will need to install the driver from the Device Manager window (contact the professor for further details).
+\end{enumerate}
+
 \subsubsection*{MacOS-Intel}
 \begin{enumerate}
-\item Select the platform ARM ELF (hosted on darwin) 2021, and download the file gnat-community-2019-20190517-arm-elf-darwin-bin.dmg
+\item Select the platform ARM ELF (hosted on darwin) 2021, and download the file \href{https://community.download.adacore.com/v1/1021f7395042c94e23b1b994c1d67b9d540bcd0b?filename=gnat-community-2019-20190517-arm-elf-darwin-bin.dmg&rand=576}{\nolinkurl{gnat-community-2019-20190517-arm-elf-darwin-bin.dmg}}
 \item Open the dmg disk and execute the application inside it. In order to circumvent the system protection, control-click on the file and then click on ``open" in the emergent window.
 \item You will also need the st-util,  st-flash, and st-info tools. You can download the binaries from 
 \url{https://github.com/texane/stlink/releases/download/1.3.0/stlink-1.3.0-macosx-amd64.zip}. Unzip and copy the files in the bin directory to a directory in your PATH. You may need to circumvent MacOS-Intel protection by executing the command:
-
-	\$ xattr -d com.apple.quarantine path-to-executable-file
+\begin{BVerbatim}
+	xattr -d com.apple.quarantine path-to-executable-file
+\end{BVerbatim}
 \end{enumerate}
 \subsubsection*{GNU Linux}
 \begin{enumerate}
-\item Select the platform ARM ELF (hosted on linux) 2021, and download the file gnat-2021-20210519-arm-elf-linux64-bin
+\item Select the platform ARM ELF (hosted on linux) 2021, and download the file \href{https://community.download.adacore.com/v1/2ceb9d1ada2029d79556b710c6c4834cade3749f?filename=gnat-2021-20210519-arm-elf-linux64-bin&rand=1031}{\nolinkurl{gnat-2021-20210519-arm-elf-linux64-bin}}
 \item You will need to make the package executable before running it. In a command prompt, execute the following command:
 
-     chmod +x path\_to\_the\_package.bin
+\begin{BVerbatim}
+	chmod +x path\_to\_the\_package.bin
+\end{BVerbatim}
 
 and then execute the package.
 \item You will also need to install the stlink tools. In Ubuntu and Debian stlink must be installed from the latest built packages available in the following \href{https://github.com/stlink-org/stlink/releases/latest}{GitHub repository (release v1.8.0)}.
@@ -202,7 +229,7 @@ The README.txt file contains additional installation and execution instructions.
 
 The next activity is to compile and run a simple embedded program.
 This program is only intended to test that the compilation chain
-and the ST-LINK tools have been properly installed.
+and the ST-Link tools have been properly installed.
 
 Open GPS and do the following:
 \begin{enumerate}
@@ -245,7 +272,7 @@ and open the project file named \texttt{blinky\_f4disco.gpr}
 \item	Build the executable and load it into the board by clicking on the \hbox{\includegraphics[width=1.5em]{buildandload.png}} symbol in the tool bar (or select Build $\rightarrow$ Bareboard $\rightarrow$ Flash to board on the top menu). When the loading is complete, you will see the board LEDS blinking all at the same time.
 \end{enumerate}
 
-\section{Install MATLAB\texttrademark and Simulink\texttrademark}
+\section{Install MATLAB\texttrademark{} and Simulink\texttrademark{}}
 \addcontentsline{toc}{section}{Install MATLAB\texttrademark and Simulink\texttrademark}
 
 MATLAB and Simulink will be used to generate C code from a Simulink model and 
